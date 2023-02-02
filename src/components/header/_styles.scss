@@ -1,0 +1,17 @@
+.header {
+  background-color: $color_secundary;
+  position: sticky;
+  top: 0;
+  &-iconNavbar {
+    transition: all 0.4s ease-in-out;
+    font-size: 3rem;
+  }
+  &-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+.isOpen {
+  transition: all 0.4s ease-in-out;
+  transform: rotateY(180deg);
+}
