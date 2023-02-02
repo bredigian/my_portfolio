@@ -10,13 +10,13 @@ const Navigator = ({ isOpen }) => {
           : "navigator d-flex flex-column gap-3 w-75"
       }
     >
-      <div className="navigator-perfil d-flex align-items-center justify-content-between p-4">
+      <div className="navigator-perfil d-flex align-items-center justify-content-around p-4">
         <img
           src="../assets/image/me-1.jpg"
           alt="Perfil"
           className="navigator-perfil__img"
         />
-        <p className="navigator-perfil__title">Gianluca Bredice</p>
+        <p className="navigator-perfil__title m-0">Gianluca Bredice</p>
       </div>
       <nav className="navigator-navbar">
         <ul className="navigator-navbar__nav d-flex flex-column align-items-start gap-4">
