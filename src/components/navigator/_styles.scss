@@ -13,6 +13,7 @@
     &__title {
       font-size: 1.5rem;
       font-weight: bold;
+      color: $color_text;
     }
   }
   &-navbar {
@@ -21,8 +22,8 @@
       li {
         a {
           text-decoration: none;
-          color: black;
-          font-size: 1.75rem;
+          color: $color_text;
+          font-size: 2rem;
         }
       }
     }

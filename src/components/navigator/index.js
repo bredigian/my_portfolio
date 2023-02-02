@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 import React from "react"
 
-const Navigator = ({ isOpen }) => {
+const Navigator = ({ isOpen, handleIsOpen }) => {
   return (
     <div
       className={
@@ -21,16 +21,24 @@ const Navigator = ({ isOpen }) => {
       <nav className="navigator-navbar">
         <ul className="navigator-navbar__nav d-flex flex-column align-items-start gap-4">
           <li>
-            <NavLink to={"/"}>Inicio</NavLink>
+            <NavLink to={"/"} onClick={handleIsOpen}>
+              Inicio
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/skills"}>Conocimientos</NavLink>
+            <NavLink to={"/skills"} onClick={handleIsOpen}>
+              Conocimientos
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/projects"}>Proyectos</NavLink>
+            <NavLink to={"/projects"} onClick={handleIsOpen}>
+              Proyectos
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/contact"}>Contactame</NavLink>
+            <NavLink to={"/contact"} onClick={handleIsOpen}>
+              Contactame
+            </NavLink>
           </li>
         </ul>
       </nav>

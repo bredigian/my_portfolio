@@ -1,0 +1,11 @@
+@mixin typewriter {
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(20); //, cursor 0.5s step-end infinite alternate
+}

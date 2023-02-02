@@ -11,18 +11,12 @@
   }
   &-titles {
     &__title {
-      font-family: "Anonymous Pro", monospace;
-      font-size: 1.5rem;
-      font-weight: bold;
-      letter-spacing: 2px;
-      border-right: solid black 2px;
-      width: 100%;
-      overflow: hidden;
-      white-space: nowrap;
-      animation: typing 2s steps(15), cursor 0.5s step-end infinite alternate;
+      color: $color_text;
+      @include typewriter;
     }
     &__subtitle {
       opacity: 0;
+      color: $color_text;
       transition: all 0.4s ease-in-out;
       font-size: 1.5rem;
       font-style: italic;
@@ -31,6 +25,7 @@
   }
   &-description {
     opacity: 0;
+    color: $color_text;
     transition: all 0.4s ease-in-out;
     font-size: 1.75rem;
     letter-spacing: 1px;
@@ -39,14 +34,4 @@
 }
 .show {
   opacity: 1;
-}
-@keyframes cursor {
-  50% {
-    border-color: transparent;
-  }
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
 }

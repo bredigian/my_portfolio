@@ -5,10 +5,12 @@
   &-iconNavbar {
     transition: all 0.4s ease-in-out;
     font-size: 3rem;
+    color: $color_text;
   }
   &-title {
     font-size: 2rem;
     font-weight: bold;
+    color: $color_text;
   }
 }
 .isOpen {

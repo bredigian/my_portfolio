@@ -31,11 +31,11 @@ const Home = () => {
             : "home-description show m-0"
         }
       >
-        Soy una persona proactiva, organizada y responsable, con buenas
-        relaciones interpersonales. Siempre tengo la mejor disposición para la
-        realización de mis labores. Busco un puesto de trabajo donde pueda
-        continuar aprendiendo, y a la vez compartir mi experiencia y
-        conocimientos con el equipo de trabajo.
+        Soy una persona <b>proactiva</b>, <b>organizada</b> y <b>responsable</b>
+        , con buenas relaciones interpersonales. Siempre tengo la mejor
+        disposición para la realización de mis labores. Busco un puesto de
+        trabajo donde pueda <b>continuar aprendiendo</b>, y a la vez compartir
+        mi experiencia y conocimientos con el equipo de trabajo.
       </p>
     </div>
   )

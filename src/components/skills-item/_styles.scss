@@ -1,0 +1,17 @@
+.skills {
+  &-container {
+    &__item {
+      &-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: $color_text;
+        color: $color_primary;
+        padding: 0.5rem 1rem;
+      }
+      &-icon {
+        font-size: 4rem;
+        color: $color_text;
+      }
+    }
+  }
+}

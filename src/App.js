@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <Header title={"Inicio"} handleIsOpen={handleIsOpen} isOpen={isOpen} />
-      <Navigator isOpen={isOpen} />
+      <Navigator isOpen={isOpen} handleIsOpen={handleIsOpen} />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/skills" element={<Skills />} />
