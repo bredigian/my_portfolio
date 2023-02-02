@@ -1,0 +1,16 @@
+.contact {
+  &-container {
+    &__social {
+      &-item {
+        &__icon {
+          font-size: 2rem;
+          color: $color_text;
+        }
+        &__title {
+          font-size: 1.25rem;
+          color: $color_text;
+        }
+      }
+    }
+  }
+}

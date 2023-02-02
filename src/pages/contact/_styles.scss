@@ -1,4 +1,30 @@
 .contact {
   width: 100%;
   background-color: $color_primary;
+  &-title {
+    @include typewriter;
+  }
+  &-container {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    &__image {
+      &-img {
+        width: 20rem;
+        border-radius: 100%;
+      }
+      &-subtitle {
+        font-size: 1.75rem;
+        font-weight: bold;
+      }
+    }
+    &__social {
+      &-footer {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.show {
+  opacity: 1;
 }
