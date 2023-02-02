@@ -1,4 +1,17 @@
 .projects {
   width: 100%;
   background-color: $color_primary;
+
+  &-title {
+    @include typewriter;
+  }
+  &-container {
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.show {
+  opacity: 1;
 }

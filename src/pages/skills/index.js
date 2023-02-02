@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-import { SKILLS } from "../../db"
+import { SKILLS } from "../../db/skills"
 import { SkillsItem } from "../../components"
 
 const Skills = () => {

@@ -1,0 +1,48 @@
+.projects {
+  &-container {
+    &__item {
+      transition: all 0.4s ease-in-out;
+      border: solid $color-secundary 2px;
+      border-radius: 1rem;
+      height: 12.5rem;
+      width: 15rem;
+      overflow-y: hidden;
+      &-image {
+        height: 7.5rem !important;
+      }
+      &-description {
+        width: 100%;
+        &__main {
+          width: 100%;
+          &-title {
+            width: 100%;
+            font-size: 1.25rem;
+            color: $color-text;
+          }
+          &-icon {
+            font-size: 2rem;
+            color: $color-text;
+            transition: all 0.4s ease-in-out;
+          }
+        }
+        &-secondary {
+          font-size: 0.875rem;
+          color: $color-text;
+          font-style: italic;
+        }
+        &-link {
+          font-size: 1rem;
+          color: $color-text;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.expanded {
+  height: 20rem;
+}
+.open {
+  transition: all 0.4s ease-in-out;
+  transform: rotateX(180deg);
+}

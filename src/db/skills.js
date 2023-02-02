@@ -30,44 +30,45 @@ export const SKILLS = [
   },
   {
     id: 4,
+    name: "Bootstrap",
+    icon: FaBootstrap,
+  },
+  {
+    id: 5,
     name: "JavaScript",
     icon: FaJs,
   },
   {
-    id: 5,
+    id: 6,
     name: "React & Native",
     icon: FaReact,
   },
   {
-    id: 6,
+    id: 7,
     name: "Redux",
     icon: SiRedux,
   },
   {
-    id: 7,
+    id: 8,
     name: "NodeJS",
     icon: FaNodeJs,
   },
   {
-    id: 8,
+    id: 9,
     name: "Firebase",
     icon: SiFirebase,
   },
   {
-    id: 9,
+    id: 10,
     name: "Git",
     icon: FaGitAlt,
   },
   {
-    id: 10,
+    id: 11,
     name: "GitHub",
     icon: FaGithub,
   },
-  {
-    id: 11,
-    name: "Bootstrap",
-    icon: FaBootstrap,
-  },
+
   {
     id: 12,
     name: "Java",
