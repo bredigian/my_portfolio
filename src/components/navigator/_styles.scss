@@ -50,7 +50,6 @@
     position: sticky;
     top: 0;
     &-perfil {
-      flex-grow: 1;
       justify-content: center !important;
       gap: 1rem;
       &__title {
@@ -58,8 +57,10 @@
       }
     }
     &-navbar {
+      flex-grow: 1;
       align-self: center !important;
       &__nav {
+        justify-content: center !important;
         flex-direction: row !important;
         li {
           transition: all 0.2s ease-in-out;
@@ -74,7 +75,7 @@
       }
     }
     &-config {
-      flex-grow: 1;
+      flex-grow: 0;
     }
   }
   .hidden {
