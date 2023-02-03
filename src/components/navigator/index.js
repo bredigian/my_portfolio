@@ -20,7 +20,7 @@ const Navigator = ({ isOpen, handleLanguage, handleIsOpen, language }) => {
         <p className="navigator-perfil__title m-0">Gianluca Bredice</p>
       </div>
       <nav className="navigator-navbar">
-        <ul className="navigator-navbar__nav d-flex flex-column align-items-start gap-4">
+        <ul className="navigator-navbar__nav d-flex flex-column align-items-center m-0 p-0 gap-4">
           <li>
             <NavLink to={"/"} onClick={handleIsOpen}>
               {language === "Español" ? "Inicio" : "Home"}

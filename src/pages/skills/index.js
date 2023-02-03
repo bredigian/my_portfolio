@@ -9,7 +9,7 @@ const Skills = ({ language }) => {
     setShowSkills(true)
   }, 2500)
   return (
-    <div className="skills d-flex flex-column align-items-center gap-4 p-4">
+    <div className="skills d-flex flex-column align-items-center gap-5 p-4">
       <p className="skills-title m-0">
         {language === "Español"
           ? "Conocimientos y habilidades"
