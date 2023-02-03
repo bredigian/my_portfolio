@@ -47,10 +47,12 @@
     height: min-content;
     flex-direction: row !important;
     justify-content: space-between !important;
-    position: relative;
+    position: sticky;
+    top: 0;
     &-perfil {
-      flex-direction: column !important;
-      gap: 0.5rem !important;
+      flex-grow: 1;
+      justify-content: center !important;
+      gap: 1rem;
       &__title {
         font-size: 1.25rem;
       }
@@ -72,7 +74,7 @@
       }
     }
     &-config {
-      flex-grow: 0;
+      flex-grow: 1;
     }
   }
   .hidden {
