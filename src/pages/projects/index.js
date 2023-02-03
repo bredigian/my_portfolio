@@ -3,14 +3,18 @@ import React, { useState } from "react"
 import { PROJECTS } from "../../db/projects"
 import { ProjectsItem } from "../../components"
 
-const Projects = () => {
+const Projects = ({ language }) => {
   const [showProjects, setShowProjects] = useState(false)
   setTimeout(() => {
     setShowProjects(true)
   }, 2500)
   return (
     <div className="projects d-flex flex-column align-items-center gap-4 p-4">
-      <p className="projects-title">Mis proyectos realizados</p>
+      <p className="projects-title">
+        {language === "Español"
+          ? "Mis proyectos realizados"
+          : "My completed projects"}
+      </p>
       <ul
         className={
           !showProjects
@@ -19,7 +23,11 @@ const Projects = () => {
         }
       >
         {PROJECTS.map((project) => (
-          <ProjectsItem key={project.id} project={project} />
+          <ProjectsItem
+            key={project.id}
+            project={project}
+            language={language}
+          />
         ))}
       </ul>
     </div>

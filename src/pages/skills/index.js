@@ -3,14 +3,18 @@ import React, { useState } from "react"
 import { SKILLS } from "../../db/skills"
 import { SkillsItem } from "../../components"
 
-const Skills = () => {
+const Skills = ({ language }) => {
   const [showSkills, setShowSkills] = useState(false)
   setTimeout(() => {
     setShowSkills(true)
   }, 2500)
   return (
     <div className="skills d-flex flex-column align-items-center gap-4 p-4">
-      <p className="skills-title m-0">Conocimientos y habilidades</p>
+      <p className="skills-title m-0">
+        {language === "Español"
+          ? "Conocimientos y habilidades"
+          : "Knowledge and skills"}
+      </p>
       <ul
         className={
           !showSkills

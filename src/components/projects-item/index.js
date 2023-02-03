@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 import { BsChevronDown } from "react-icons/bs"
 
-const ProjectsItem = ({ project }) => {
+const ProjectsItem = ({ project, language }) => {
   const [showDescription, setShowDescription] = useState(false)
   const handleShowDescription = () => {
     setShowDescription(!showDescription)
@@ -35,13 +35,15 @@ const ProjectsItem = ({ project }) => {
           />
         </div>
         <p className="projects-container__item-description-secondary m-0">
-          {project.description}
+          {language === "Español"
+            ? project.description_es
+            : project.description_en}
         </p>
         <a
           className="projects-container__item-description-link"
           href={project.link}
         >
-          Link al proyecto
+          {language === "Español" ? "Link al proyecto" : "Link to project"}
         </a>
       </div>
     </div>

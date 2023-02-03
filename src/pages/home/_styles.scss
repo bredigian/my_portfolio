@@ -24,12 +24,16 @@
     }
   }
   &-description {
+    width: 80%;
     opacity: 0;
     color: $color_text;
     transition: all 0.4s ease-in-out;
     font-size: 1.75rem;
     letter-spacing: 1px;
     text-align: center;
+    padding: 2rem;
+    border: solid $color_secundary 2px;
+    border-radius: 10px;
   }
 }
 .show {

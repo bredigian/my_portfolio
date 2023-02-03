@@ -3,14 +3,18 @@ import React, { useState } from "react"
 import { CONTACT } from "../../db/contact"
 import { ContactItem } from "../../components"
 
-const Contact = () => {
+const Contact = ({ language }) => {
   const [showInformation, setShowInformation] = useState(false)
   setTimeout(() => {
     setShowInformation(true)
   }, 2500)
   return (
     <div className="contact d-flex flex-column align-items-center gap-4 p-4">
-      <p className="contact-title">{"Contactame y hablemos :)"}</p>
+      <p className="contact-title">
+        {language === "Español"
+          ? "Contactame y hablemos :)"
+          : "Contact me and let's talk :)"}
+      </p>
       <div
         className={
           !showInformation

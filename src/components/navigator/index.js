@@ -2,10 +2,7 @@ import { NavLink } from "react-router-dom"
 import React from "react"
 import Switch from "../switch"
 
-const Navigator = ({ isOpen, handleIsOpen }) => {
-  const handleChecked = () => {
-    console.log("checked")
-  }
+const Navigator = ({ isOpen, handleLanguage, handleIsOpen, language }) => {
   return (
     <div
       className={
@@ -26,31 +23,32 @@ const Navigator = ({ isOpen, handleIsOpen }) => {
         <ul className="navigator-navbar__nav d-flex flex-column align-items-start gap-4">
           <li>
             <NavLink to={"/"} onClick={handleIsOpen}>
-              Inicio
+              {language === "Español" ? "Inicio" : "Home"}
             </NavLink>
           </li>
           <li>
             <NavLink to={"/skills"} onClick={handleIsOpen}>
-              Conocimientos
+              {language === "Español" ? "Habilidades" : "Skills"}
             </NavLink>
           </li>
           <li>
             <NavLink to={"/projects"} onClick={handleIsOpen}>
-              Proyectos
+              {language === "Español" ? "Proyectos" : "Projects"}
             </NavLink>
           </li>
           <li>
             <NavLink to={"/contact"} onClick={handleIsOpen}>
-              Contactame
+              {language === "Español" ? "Contactame" : "Contact me"}
             </NavLink>
           </li>
         </ul>
       </nav>
       <div className="navigator-config d-flex align-items-center justify-content-around p-4">
         <div className="navigator-config__language d-flex align-items-center gap-4">
-          <p className="navigator-config__language-value m-0">Español</p>
-          <Switch rounded={true} handleChecked={handleChecked} />
-          <p className="navigator-config__language-value m-0">English</p>
+          <p className="navigator-config__language-value m-0">
+            {language === "Español" ? "Inglés" : "English"}
+          </p>
+          <Switch rounded={true} handleChecked={handleLanguage} />
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-const Home = () => {
+const Home = ({ language }) => {
   const [showInformation, setShowInformation] = useState(false)
   setTimeout(() => {
     setShowInformation(true)
@@ -13,7 +13,11 @@ const Home = () => {
         className={!showInformation ? "home-image" : "home-image show"}
       />
       <div className="home-titles d-flex flex-column align-items-center gap-4">
-        <p className="home-titles__title m-0">Hola! mi nombre es Gianluca</p>
+        <p className="home-titles__title m-0">
+          {language === "Español"
+            ? "¡Hola! mi nombre es Gianluca"
+            : "Hi! my name is Gianluca"}
+        </p>
         <p
           className={
             !showInformation
@@ -21,7 +25,9 @@ const Home = () => {
               : "home-titles__subtitle show m-0"
           }
         >
-          Tengo 20 años <br /> y me dedico al <b>Desarrollo Frontend</b>
+          {language === "Español"
+            ? "Tengo 20 años y me dedico al Desarrollo Frontend"
+            : "I'm 20 and I dedicate myself to Frontend Development"}
         </p>
       </div>
       <p
@@ -31,11 +37,9 @@ const Home = () => {
             : "home-description show m-0"
         }
       >
-        Soy una persona <b>proactiva</b>, <b>organizada</b> y <b>responsable</b>
-        , con buenas relaciones interpersonales. Siempre tengo la mejor
-        disposición para la realización de mis labores. Busco un puesto de
-        trabajo donde pueda <b>continuar aprendiendo</b>, y a la vez compartir
-        mi experiencia y conocimientos con el equipo de trabajo.
+        {language === "Español"
+          ? "Soy una persona proactiva, organizada y responsable, con buenas relaciones interpersonales. Siempre tengo la mejordisposición para la realización de mis labores. Busco un puesto detrabajo donde pueda continuar aprendiendo, y a la vez compartir mi experiencia y conocimientos con el equipo de trabajo."
+          : "I am a proactive, organized and responsible person, with good interpersonal relationships. I always have the best disposition to carry out my work. I am looking for a job where I can continue learning, and at the same time share my experience and knowledge with the work team."}
       </p>
     </div>
   )
