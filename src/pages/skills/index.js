@@ -10,11 +10,13 @@ const Skills = ({ language }) => {
   }, 2500)
   return (
     <div className="skills d-flex flex-column align-items-center gap-5 p-4">
-      <p className="skills-title m-0">
-        {language === "Español"
-          ? "Conocimientos y habilidades"
-          : "Knowledge and skills"}
-      </p>
+      <div className="skills-titles">
+        <p className="skills-titles__title m-0">
+          {language === "Español"
+            ? "Conocimientos y habilidades"
+            : "Knowledge and skills"}
+        </p>
+      </div>
       <ul
         className={
           !showSkills

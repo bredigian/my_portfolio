@@ -14,3 +14,21 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .contact {
+    &-container {
+      &__social {
+        &-item {
+          &__icon {
+            font-size: 2.5rem;
+          }
+          &__title {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+}

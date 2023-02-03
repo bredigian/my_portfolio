@@ -10,11 +10,13 @@ const Projects = ({ language }) => {
   }, 2500)
   return (
     <div className="projects d-flex flex-column align-items-center gap-4 p-4">
-      <p className="projects-title">
-        {language === "Español"
-          ? "Mis proyectos realizados"
-          : "My completed projects"}
-      </p>
+      <div className="projects-titles">
+        <p className="projects-titles__title">
+          {language === "Español"
+            ? "Mis proyectos realizados"
+            : "My completed projects"}
+        </p>
+      </div>
       <ul
         className={
           !showProjects

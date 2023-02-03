@@ -46,3 +46,36 @@
   transition: all 0.4s ease-in-out;
   transform: rotateX(180deg);
 }
+@media (min-width: 768px) {
+  .projects {
+    &-container {
+      &__item {
+        height: 16rem;
+        width: 20rem;
+        &-image {
+          height: 10rem !important;
+        }
+        &-description {
+          &__main {
+            &-title {
+              font-size: 1.75rem;
+            }
+            &-icon {
+              font-size: 2.5rem;
+              cursor: pointer;
+            }
+          }
+          &-secondary {
+            font-size: 1.25rem;
+          }
+          &-link {
+            font-size: 1.35rem;
+          }
+        }
+      }
+    }
+  }
+  .expanded {
+    height: 26rem;
+  }
+}

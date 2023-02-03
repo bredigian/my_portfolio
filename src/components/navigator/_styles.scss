@@ -41,3 +41,41 @@
   transition: all 0.4s ease-in-out;
   transform: translateX(-100%);
 }
+@media (min-width: 768px) {
+  .navigator {
+    width: 100% !important;
+    height: min-content;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    position: relative;
+    &-perfil {
+      flex-direction: column !important;
+      gap: 0.5rem !important;
+      &__title {
+        font-size: 1.25rem;
+      }
+    }
+    &-navbar {
+      align-self: center !important;
+      &__nav {
+        flex-direction: row !important;
+        li {
+          transition: all 0.2s ease-in-out;
+          border-bottom: solid transparent 0.15rem;
+          &:hover {
+            border-bottom-color: $color_text;
+          }
+          a {
+            font-size: 1.75rem;
+          }
+        }
+      }
+    }
+    &-config {
+      flex-grow: 0;
+    }
+  }
+  .hidden {
+    transform: translateX(0);
+  }
+}

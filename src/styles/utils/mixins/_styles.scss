@@ -7,5 +7,6 @@
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 2s steps(20); //, cursor 0.5s step-end infinite alternate
+  border-right: solid $color_text 0.2rem;
+  animation: typing 2s, cursor 0.5s step-end infinite alternate;
 }

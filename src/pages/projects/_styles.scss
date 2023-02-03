@@ -1,9 +1,10 @@
 .projects {
   width: 100%;
   background-color: $color_primary;
-
-  &-title {
-    @include typewriter;
+  &-titles {
+    &__title {
+      @include typewriter;
+    }
   }
   &-container {
     transition: all 0.4s ease-in-out;
@@ -14,4 +15,13 @@
 }
 .show {
   opacity: 1;
+}
+@media (min-width: 768px) {
+  .projects {
+    &-titles {
+      &__title {
+        font-size: 3rem;
+      }
+    }
+  }
 }

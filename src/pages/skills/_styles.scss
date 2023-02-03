@@ -1,9 +1,11 @@
 .skills {
   width: 100%;
   background-color: $color_primary;
-  &-title {
-    color: $color_text;
-    @include typewriter;
+  &-titles {
+    &__title {
+      color: $color_text;
+      @include typewriter;
+    }
   }
   &-container {
     transition: all 0.4s ease-in-out;
@@ -14,4 +16,13 @@
 }
 .show {
   opacity: 1;
+}
+@media (min-width: 768px) {
+  .skills {
+    &-titles {
+      &__title {
+        font-size: 3rem;
+      }
+    }
+  }
 }

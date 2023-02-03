@@ -10,11 +10,13 @@ const Contact = ({ language }) => {
   }, 2500)
   return (
     <div className="contact d-flex flex-column align-items-center gap-4 p-4">
-      <p className="contact-title">
-        {language === "Español"
-          ? "Contactame y hablemos :)"
-          : "Contact me and let's talk :)"}
-      </p>
+      <div className="contact-titles">
+        <p className="contact-titles__title">
+          {language === "Español"
+            ? "Contactame y hablemos :)"
+            : "Contact me and let's talk :)"}
+        </p>
+      </div>
       <div
         className={
           !showInformation
