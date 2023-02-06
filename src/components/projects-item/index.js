@@ -42,6 +42,8 @@ const ProjectsItem = ({ project, language }) => {
         <a
           className="projects-container__item-description-link"
           href={project.link}
+          target="_blank"
+          rel="noreferrer"
         >
           {language === "Español" ? "Link al proyecto" : "Link to project"}
         </a>

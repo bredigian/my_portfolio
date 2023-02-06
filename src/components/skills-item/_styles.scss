@@ -18,12 +18,12 @@
 @media (min-width: 768px) {
   .skills {
     &-container {
+      align-items: center;
       &__item {
-        justify-content: space-around !important;
+        width: 75% !important;
+        justify-content: space-between !important;
         &-name {
           font-size: 2rem;
-          width: 18rem;
-          text-align: center;
         }
         &-icon {
           font-size: 5rem;

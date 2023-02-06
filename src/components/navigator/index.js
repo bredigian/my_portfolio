@@ -48,7 +48,7 @@ const Navigator = ({ isOpen, handleLanguage, handleIsOpen, language }) => {
           <p className="navigator-config__language-value m-0">
             {language === "Español" ? "Inglés" : "English"}
           </p>
-          <Switch rounded={true} handleChecked={handleLanguage} />
+          <Switch rounded={false} handleChecked={handleLanguage} />
         </div>
       </div>
     </div>

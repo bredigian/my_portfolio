@@ -53,11 +53,10 @@
       justify-content: center !important;
       gap: 1rem;
       &__title {
-        font-size: 1.25rem;
+        display: none !important;
       }
     }
     &-navbar {
-      flex-grow: 1;
       align-self: center !important;
       &__nav {
         justify-content: center !important;
@@ -75,7 +74,7 @@
       }
     }
     &-config {
-      flex-grow: 0;
+      justify-content: end !important;
     }
   }
   .hidden {
