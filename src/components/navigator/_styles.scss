@@ -3,6 +3,7 @@
   height: 100vh;
   position: fixed;
   background-color: $color_secundary;
+  z-index: 2;
   &-perfil {
     &__img {
       width: 6rem;

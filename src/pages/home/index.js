@@ -38,7 +38,7 @@ const Home = ({ language }) => {
         }
       >
         {language === "Español"
-          ? "Soy una persona proactiva, organizada y responsable, con buenas relaciones interpersonales. Siempre tengo la mejordisposición para la realización de mis labores. Busco un puesto detrabajo donde pueda continuar aprendiendo, y a la vez compartir mi experiencia y conocimientos con el equipo de trabajo."
+          ? "Soy una persona proactiva, organizada y responsable, con buenas relaciones interpersonales. Siempre tengo la mejor disposición para la realización de mis labores. Busco un puesto de trabajo donde pueda continuar aprendiendo, y a la vez compartir mi experiencia y conocimientos con el equipo de trabajo."
           : "I am a proactive, organized and responsible person, with good interpersonal relationships. I always have the best disposition to carry out my work. I am looking for a job where I can continue learning, and at the same time share my experience and knowledge with the work team."}
       </p>
     </div>
